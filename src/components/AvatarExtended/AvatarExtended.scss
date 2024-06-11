@@ -1,0 +1,48 @@
+@import "../../styles/mixins.scss";
+
+.avatar-extended-comp {
+
+  .aec-sm {
+    @include box(30px);
+    @include borderStyling();
+  }
+  
+  .aec-md {
+    @include box(40px);
+    @include borderStyling();
+  }
+  
+  .aec-lg {
+    @include box(50px);
+    @include borderStyling();
+  }
+  .aec-alt {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      color: var(--avatarAlt);
+      background-color: var(--white);
+      background-color: var(--avatarAlt);
+      @include setToCenter();
+
+    .aeca-img {
+        height: 17px;
+        aspect-ratio: 1/1;
+    }
+  }
+  
+}
+
+.avatar-comp-default {
+    bottom: 5px;
+    position: relative;
+    @include box(100%);
+    @include setToCenter();
+    @include borderStyling();
+    .avatar-comp-men {
+        font-size: 30px;
+        color: var(--white)
+    }
+}

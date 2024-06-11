@@ -1,0 +1,28 @@
+@import "../../styles/mixins.scss";
+
+.main-page-content {
+  flex: 1 1;
+  gap: 10px;
+  display: flex;
+  padding: 15px;
+  background-color: var(--wash-white);
+
+  .mpc-menu-tree-content {
+    min-width: 250px;
+    background-color: var(--white);
+    box-shadow: 5px 0px 8px #252F3B14;
+    border-radius: 4px;
+  }
+
+  .mpc-menu-stat-content {
+    flex: 1;
+    gap: 10px;
+    @include flexColumn();
+
+    .mpc-table-content {
+      height: 100%;
+      border-radius: 4px;
+      background-color: var(--white);
+    }
+  }
+}
