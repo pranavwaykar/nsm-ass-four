@@ -4,7 +4,7 @@ import "./AvatarExtended.scss";
 const AvatarExtended = ({ size = "md", img, alt = "", tooltip }) => {
   const [imageError, setImageError] = useState(false);
 
-  const renderDefaultAvatar = () => (
+  const DefaultAvatar = () => (
     <div className="avatar-comp-default">
       <i className="icon-avatar avatar-comp-men" />
     </div>
@@ -24,7 +24,7 @@ const AvatarExtended = ({ size = "md", img, alt = "", tooltip }) => {
           <img className="aeca-img" alt={alt} />
         </div>
       ) : (
-        renderDefaultAvatar()
+        <DefaultAvatar />
       )}
     </div>
   );
